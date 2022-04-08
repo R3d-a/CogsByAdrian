@@ -9,8 +9,8 @@ Various fun and/or useful plugins for [Discord Red][discord-red].
 To add the cogs to your instance please do:
 ```
 - [p]load downloader
-- [p]repo add RedAmr https://github.com/R3d-a/CogsByAdrian
-- [p]cog install RedAmr  <cog_you_want>
+- [p]repo add R3d-a https://github.com/R3d-a/CogsByAdrian
+- [p]cog install R3d-a <cog_you_want>
 - [p]load <installed
 ```
                      
