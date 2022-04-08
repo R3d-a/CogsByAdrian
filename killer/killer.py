@@ -22,43 +22,43 @@ class Killer(commands.Cog):
 
         if target['id'] == bot['id']:  # tryng to slap the bot, eh?
 
-            message1 = "{} looks at {}... ✋😏 🤖".format(
+            message1 = "{} looks at {}...".format(
                 killer['nick'], bot['nick'])
-            message2 = "but {} suddenly slaps {} with his silver sword! 😵💫 🍆🤖".format(
+            message2 = "but {} suddenly slaps {} with his silver sword!".format(
                 bot['nick'], killer['nick'])
 
         elif killer['id'] == target['id']:  # wants to slap themselves
 
-            message1 = "{} looks themselves in the mirror... 🖼😐".format(
+            message1 = "{} looks themselves in the mirror...".format(
                 killer['nick'])
 
             if diceroll > 89:
-                message2 = "and smashes their head against it! ✨🖼💥😫"
+                message2 = "and smashes their head against it!"
 
             elif diceroll > 10:
-                message2 = "and gently pats their cheeks to wake up! 🖼😊"
+                message2 = "and gently pats their cheeks to wake up!"
 
             else:
-                message2 = "and trips on the wet floor! Ouch! 🤕"
+                message2 = "and trips on the wet floor! Ouch!"
 
         else:  # wants to slap another user
 
-            message1 = "{} raises their hand... ✋😏".format(killer['nick'])
+            message1 = "{} raises their hand...".format(killer['nick'])
 
             if diceroll > 89:
-                message2 = "and mutilates {}! Oh my god, there's blood everywhere! 😵💥🤛😡".format(
+                message2 = "and mutilates {}! Oh my god, there's blood everywhere!".format(
                     target['formatted'])
 
             elif diceroll > 50 and diceroll < 55:
-                message2 = "and gives {} a romantic spanking 😊🍑 👋😍".format(
+                message2 = "and gives {} a romantic spanking.".format(
                     target['formatted'])
 
             elif diceroll > 10:
-                message2 = "and slaps {} senseless! 😫💫👋😠".format(
+                message2 = "and slaps {} senseless!".format(
                     target['formatted'])
 
             else:
-                message2 = "and misses! So stupid! 👋😟💨 😛"
+                message2 = "and misses! So stupid!"
 
         await ctx.send(message1)
         time.sleep(1)
@@ -76,42 +76,42 @@ class Killer(commands.Cog):
 
         if target['id'] == bot['id']:  # tryng to punch the bot, eh?
 
-            message1 = "{} waves their fists at {}... 🤖 ✊🧐".format(
+            message1 = "{} waves their fists at {}...".format(
                 killer['nick'], bot['nick'])
-            message2 = "but {} casts Igni on {}! 🤖 🔥😫🔥".format(
+            message2 = "but {} casts Igni on {}!".format(
                 bot['nick'], killer['formatted'])
 
         elif killer['id'] == target['id']:  # wants to punch themselves
 
-            message1 = "{} looks at their own fist... 😒✊".format(
+            message1 = "{} looks at their own fist...".format(
                 killer['nick'])
 
             if diceroll > 89:
-                message2 = "and bashes their head through the nearest wall! 😫▮💥"
+                message2 = "and bashes their head through the nearest wall!"
             elif diceroll > 69:
-                message2 = "and bashes their head against it until its broken! 😡💫🤟"
+                message2 = "and bashes their head against it until its broken!"
             elif diceroll > 10:
-                message2 = "and repeatedly hits themselves with their pathetic little hands 🤜😣🤛"
+                message2 = "and repeatedly hits themselves with their pathetic little hands."
             else:
-                message2 = "tries to throw a punch, but misses and breaks their ankle! ☹️🦵"
+                message2 = "tries to throw a punch, but misses and breaks their ankle!"
 
         else:  # wants to punch another user
 
-            message1 = "{} raises their fists towards {}... 😧 ✊😠".format(
+            message1 = "{} raises their fists towards {}...".format(
                 killer['formatted'], target['formatted'])
 
             if diceroll > 89:
-                message2 = "\"Omae wa mou shindeiru\", says {}, before {} explodes into a cloud of blood and guts. 💥🤯💥 👈😎".format(
+                message2 = "\"Omae wa mou shindeiru\", says {}, before {} explodes into a cloud of blood and guts.".format(
                     killer['formatted'], target['formatted'])
 
             elif diceroll > 59:
-                message2 = "and a flurry of punches break every bone in {}'s body! Ora! Ora! Ora! Ora! 😣🤛🤛🤛 😡".format(
+                message2 = "and a flurry of punches break every bone in {}'s body! Ora! Ora! Ora! Ora!".format(
                     target['formatted'])
             elif diceroll > 10:
-                message2 = "and punches {} right in the face! Hard! 😣🤛 😠".format(
+                message2 = "and punches {} right in the face! Hard!".format(
                     target['formatted'])
             else:
-                message2 = "and trips on a banana peel! Doofus! 🤣👉 😖🍌"
+                message2 = "and trips on a banana peel! Doofus!"
 
         await ctx.send(message1)
         time.sleep(1)
@@ -129,9 +129,9 @@ class Killer(commands.Cog):
 
         if target['id'] == bot['id']:  # tryng to shoot the bot, eh?
 
-            message1 = "{} raises their dagger at {}... 😠🔪 🤖".format(
+            message1 = "{} raises their dagger at {}...".format(
                 killer['nick'], bot['nick'])
-            message2 = "but {} teleports behind {} and strikes! 😵💫 ⚔️🤖 {}".format(
+            message2 = "but {} teleports behind {} and strikes! {}".format(
                 bot['nick'], killer['formatted'], '`"Nothing personell, kid"`')
 
         elif killer['id'] == target['id']:  # wants to slap themselves
@@ -140,28 +140,28 @@ class Killer(commands.Cog):
                 killer['nick'])
 
             if diceroll > 89:
-                message2 = "and cuts their own head off! How is that even possible!? 🙃👕"
+                message2 = "and cuts their own head off! How is that even possible!?"
             elif diceroll > 10:
-                message2 = "and commits sudoku! 🔪😵"
+                message2 = "and commits sudoku!"
             else:
-                message2 = "and accidentally cuts their finger on a hentai magazine! 📕😫 {}-no skebe!".format(
+                message2 = "and accidentally cuts their finger on a hentai magazine! {}-no skebe!".format(
                     target['nick'])
 
         else:  # wants to slap another user
 
-            message1 = "{} raises their dagger... 😏🔪 😶".format(killer['nick'])
+            message1 = "{} raises their dagger... ".format(killer['nick'])
 
             if diceroll > 89:
-                message2 = "and turns {} into a sheesh kebab! RIP in pieces! 😡🔪 👣 😵 🤚 👕 👖 ✋".format(
+                message2 = "and turns {} into a sheesh kebab! RIP in pieces!".format(
                     target['formatted'])
             elif diceroll > 10:
-                message2 = "and stabs {}! Yikes! 😠🔪💥 ✋😵🤚".format(
+                message2 = "and stabs {}! Yikes!".format(
                     target['formatted'])
             elif diceroll > 5:
-                message2 = "but {} dodges like a ninja! 😛💨 😟🔪".format(
+                message2 = "but {} dodges like a ninja!".format(
                     target['formatted'])
             else:
-                message2 = "and cuts his own hand off! What an amateur! 😟🔪🤚 😝"
+                message2 = "and cuts his own hand off! What an amateur!"
 
         await ctx.send(message1)
         time.sleep(1)
@@ -181,7 +181,7 @@ class Killer(commands.Cog):
 
             message1 = "{} aims their gun, pulls the trigger...".format(
                 killer['nick'])
-            message2 = "but {} shot first! 😵 💥🔫🤖".format(bot['nick'])
+            message2 = "but {} shot first!".format(bot['nick'])
 
         elif killer['id'] == target['id']:  # wants to kill themselves
 
@@ -189,15 +189,15 @@ class Killer(commands.Cog):
                 killer['nick'])
 
             if diceroll > 89:
-                message2 = "and explodes! Boom! Splat! What a mess! 💥😵💥"
+                message2 = "and explodes! Boom! Splat! What a mess!"
             elif diceroll > 30:
-                message2 = "and commits sudoku! 💥😵🔫"
+                message2 = "and commits sudoku!"
             elif diceroll > 20:
-                message2 = "and KYSed themselves! 💥😵🔫"
+                message2 = "and KYSed themselves!"
             elif diceroll > 10:
-                message2 = "and somehow didn't miss! At least this idiot is good for something! 💥😵🔫"
+                message2 = "and somehow didn't miss! At least this idiot is good for something!"
             else:
-                message2 = "and misses! What an idiot! Should've aimed at the temple! 💥🔫😯"
+                message2 = "and misses! What an idiot! Should've aimed at the temple!"
 
         else:  # wants to kill other user
 
@@ -205,29 +205,31 @@ class Killer(commands.Cog):
                 killer['nick'])
 
             if diceroll > 89:
-                message2 = "and {} explodes into a red, gut-ridden, eyeball-strewn paste. Fun!!! 💥🔴 🔫🤠".format(
+                message2 = "and {} explodes into a red, gut-ridden, eyeball-strewn paste. Fun!!!".format(
                     target['formatted'])
             elif diceroll > 75:
-                message2 = "and shoots {} in the head! Bang! 💥😵 🔫😆".format(
+                message2 = "and shoots {} in the head! Bang!".format(
                     target['formatted'])
             elif diceroll > 10:
-                message2 = "and shoots {} dead! 😱 💥🔫😁".format(
+                message2 = "and shoots {} dead!".format(
                     target['formatted'])
             elif diceroll > 5:
-                message2 = "and misses {}! Doh! 😗 💨🔫😣".format(
+                message2 = "and misses {}! Doh!".format(
                     target['formatted'])
             else:
-                message2 = "and shoots themselves instead of {}! LOL! 🤣 💥😵🔫".format(
+                message2 = "and shoots themselves instead of {}! LOL!".format(
                     target['formatted'])
 
         await ctx.send(message1)
         time.sleep(1)
         await ctx.send(message2)
 
+"""
+
     # LOVE
     @commands.command()
     async def love(self, ctx, *, user: discord.Member):
-        """Show some affection for once!"""
+        "Show some affection for once!"
 
         bot, killer, target = self.getActors(
             ctx.bot.user, ctx.message.author, user)
@@ -255,7 +257,7 @@ class Killer(commands.Cog):
     # SEX
     @commands.command()
     async def sex(self, ctx, *, user: discord.Member):
-        """Sex a user, because there's no NSFW channel!"""
+        "Sex a user, because there's no NSFW channel!"
 
         bot, killer, target = self.getActors(
             ctx.bot.user, ctx.message.author, user)
@@ -276,11 +278,12 @@ class Killer(commands.Cog):
             message = "This is a Christmas Discord, get a room! 🎄"
 
         await ctx.send(message)
-
+        
+     
     # SUCC
     @commands.command()
     async def succ(self, ctx, *, user: discord.Member):
-        """Succ a user like a lollipop"""
+        "Succ a user like a lollipop"
 
         bot, killer, target = self.getActors(
             ctx.bot.user, ctx.message.author, user)
@@ -303,3 +306,5 @@ class Killer(commands.Cog):
                 message = "This is a Christmas Discord, get a room! 🎄"
 
         await ctx.send(message)
+
+"""
