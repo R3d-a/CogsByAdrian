@@ -6,8 +6,14 @@
 
 Various fun and/or useful plugins for [Discord Red][discord-red].
 
-To add the cogs to your instance please do: `[p]repo add CogsByAdrian https://github.com/R3d-a/CogsByAdrian`
-
+To add the cogs to your instance please do:
+```
+- [p]load downloader
+- [p]repo add RedAmr https://github.com/R3d-a/CogsByAdrian
+- [p]cog install RedAmr  <cog_you_want>
+- [p]load <installed
+```
+                     
 ## Collection
 
 - **[Insult](#insult)** Insult a user.
