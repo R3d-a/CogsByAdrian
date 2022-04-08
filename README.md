@@ -6,7 +6,7 @@
 
 Various fun and/or useful plugins for [Discord Red][discord-red].
 
-To add the cogs to your instance please do: `[p]repo add CogsByAdrian https://github.com/designbyadrian/CogsByAdrian`
+To add the cogs to your instance please do: `[p]repo add CogsByAdrian https://github.com/R3d-a/CogsByAdrian`
 
 ## Collection
 
